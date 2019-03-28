@@ -1,0 +1,24 @@
+<h4 class="mt-3 text-center">Create Account</h4>
+<div class="container-fluid">
+  <form class="row">
+    <div class="col-lg">
+      <kendo-tabstrip keepTabContent="true">
+        <kendo-tabstrip-tab [title]="'Personal'">
+          <ng-template kendoTabContent>
+            <personal-info></personal-info>
+          </ng-template>
+        </kendo-tabstrip-tab>
+        <kendo-tabstrip-tab [title]="'Contact Information'">
+          <ng-template kendoTabContent>
+            <contact-info></contact-info>
+          </ng-template>
+        </kendo-tabstrip-tab>
+        <kendo-tabstrip-tab [title]="'Submission'">
+          <ng-template kendoTabContent>
+            <submit-controls-panel></submit-controls-panel>
+          </ng-template>
+        </kendo-tabstrip-tab>
+      </kendo-tabstrip>
+    </div>
+  </form>
+</div>
